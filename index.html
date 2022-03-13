@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de livros</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de livros</h1>
+    </header>
+    <main>
+        <div class="create">
+            <span>
+                <label for="bookName">Nome do livro:</label>
+                <input id="bookName" name="bookName" type="text" value="" placeholder="nome do livro">
+            </span>
+            <span>
+                <label for="authorName">Nome do autor:</label>
+                <input id="authorName" name="authorName" type="text" value="" placeholder="nome do autor">
+            </span>
+            <span>
+                <label for="initDate">inicio da leitura:</label>
+                <input id="initDate" name="initDate" type="date" value="">
+            </span>
+            <span>
+                <label for="finishDate">fim da leitura:</label>
+                <input id="finishDate" name="finishDate" type="date" value="">
+            </span>
+
+            <button id="register">adicionar</button>
+        </div>
+        <div class="update">
+            <span class="closeMenuBtn">X</span>
+            <input class="updateInput" type="text" value="">
+            <input class="updateInput" type="text" value="">
+            <input class="updateInput" type="date" value="">
+            <input class="updateInput" type="date" value="">
+            <button id="updateBtn">update</button>
+            <button id="deleteBtn">delete</button>
+        </div>
+        <table>
+            <tr>
+                <th>Livro</th>
+                <th>Autor</th>
+                <th>data de Início</th>
+                <th>data de término</th>
+            </tr>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
