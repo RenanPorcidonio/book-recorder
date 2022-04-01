@@ -99,6 +99,13 @@ table {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .editTd {
+    max-width: 30px;
+    text-align: center;
+    padding: 8px 0;
   }
   
   tr:nth-child(even) {

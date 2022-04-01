@@ -26,16 +26,22 @@ function registerNewBook() {
     const authorName = document.createElement("td")
     const initDate = document.createElement("td")
     const finishDate = document.createElement("td")
-
+    const editableMark = document.createElement("td")
+    const penIcon = document.createElement("i")
+    penIcon.classList.add("fas", "fa-pen")
+    editableMark.classList.add("editTd")
+    
     bookName.textContent = books[books.length - 1].name
     authorName.textContent = books[books.length - 1].author
     initDate.textContent = books[books.length - 1].initDate
     finishDate.textContent = books[books.length - 1].finishDate
+    editableMark.appendChild(penIcon)
 
     newBook.appendChild(bookName)
     newBook.appendChild(authorName)
     newBook.appendChild(initDate)
     newBook.appendChild(finishDate)
+    newBook.appendChild(editableMark)
 
     table.children[0].appendChild(newBook)
 }
